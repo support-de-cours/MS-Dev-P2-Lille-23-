@@ -1,0 +1,45 @@
+<h1>Interpolations</h1>
+
+<h2>Data Binding</h2>
+{{ title }}
+
+
+<hr>
+
+<h2>Property Binding</h2>
+{{ imgUrl }} <br>
+
+<p>Image affichée avec du data binding</p>
+<img src="{{ imgUrl }}" alt="{{ title }}">
+
+<p>Image affichée avec du property binding</p>
+<img [src]="imgUrl" alt="{{ title }}">
+
+
+<hr>
+
+<h2>Event Binding</h2>
+
+<span (click)="myEventMethod()">My Button</span>
+
+
+
+<hr>
+
+<h2>Two-Way Binding</h2>
+
+<input type="text" [(ngModel)]="firstname">
+<br>
+{{ firstname }}
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
