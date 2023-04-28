@@ -1,6 +1,6 @@
 Projet ToDoList
 
--> un champ de saisie.
+-> Un champ de saisie.
 -> Ajout a la liste avec un bouton
 -> Ajout a la liste en cliquant la touche entrée
 -> Affichage de la liste

@@ -1,0 +1,9 @@
+<input 
+    type="text"
+    [(ngModel)]="item"
+    (keydown.enter)="addItem()"
+>
+
+<button
+    (click)="addItem()"
+>Add new Item</button>

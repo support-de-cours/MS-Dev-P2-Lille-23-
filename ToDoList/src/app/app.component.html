@@ -1,0 +1,27 @@
+<h1>To Do List</h1>
+
+<style>
+  .strike {
+    text-decoration: line-through;
+  }
+</style>
+
+<input 
+  type="text"
+  [(ngModel)]="newItem"
+  (keydown.enter)="addItem()"
+>
+<button
+  (click)="addItem()"
+>
+  Add to the list
+</button>
+
+<hr> 
+
+<ul>
+  <li *ngFor="let item of items">
+    <span>{{ item }}</span> ====== 
+    <button type="button" (click)="strikeItem( $event )">Done</button>
+  </li>
+</ul>
