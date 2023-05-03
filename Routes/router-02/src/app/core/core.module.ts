@@ -8,7 +8,6 @@ import { LayoutModule } from './layout/layout.module';
   declarations: [],
   imports: [
     CommonModule,
-    // LayoutModule
   ],
   exports: [
     LayoutModule
