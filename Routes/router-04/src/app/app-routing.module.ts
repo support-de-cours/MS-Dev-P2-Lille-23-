@@ -7,6 +7,7 @@ import { SayYesGuard } from './guards/say-yes.guard';
 import { SayNoGuard } from './guards/say-no.guard';
 import { MaybeGuard } from './guards/maybe.guard';
 import { DComponent } from './d/d.component';
+import { SureToQuitGuard } from './guards/sure-to-quit.guard';
 
 const routes: Routes = [
   {
@@ -27,6 +28,7 @@ const routes: Routes = [
   {
     path: 'page-d',
     component: DComponent,
+    canDeactivate: [SureToQuitGuard]
   }
 ];
 
