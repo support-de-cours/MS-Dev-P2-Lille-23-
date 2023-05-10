@@ -9,7 +9,7 @@ export class SayNoGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-      // alert("Pas le droit !!");
+      alert("Pas le droit !!");
     return false;
   }
   

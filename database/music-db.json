@@ -1,0 +1,56 @@
+{
+    "albums": [
+        {
+            "id": 1,
+            "artist_id": 1,
+            "title": "Homework"
+        },
+        {
+            "id": 2,
+            "artist_id": 2,
+            "title": "Breath"
+        }
+    ],
+    "artists": [
+        {
+            "id": 1,
+            "name": "Daft Punk"
+        },
+        {
+            "id": 2,
+            "name": "Prodigy"
+        }
+    ],
+    "tracks": [
+        {
+            "id": 1,
+            "title": "Daftendirekt",
+            "album_id": 1
+        },
+        {
+            "id": 2,
+            "title": "WDPK",
+            "album_id": 1
+        },
+        {
+            "id": 3,
+            "title": "Revolution",
+            "album_id": 1
+        },
+        {
+            "id": 4,
+            "title": "Da Funk",
+            "album_id": 1
+        },
+        {
+            "id": 5,
+            "title": "Phoenix",
+            "album_id": 1
+        },
+        {
+            "id": 6,
+            "title": "Fresh",
+            "album_id": 1
+        },
+    ]
+}

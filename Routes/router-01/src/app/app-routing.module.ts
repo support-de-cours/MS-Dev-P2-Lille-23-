@@ -27,6 +27,7 @@ const routes: Routes = [
   // Default Route
   {
     path: '', // site.com/
+    // component: HomepageComponent
     pathMatch: 'full',
     redirectTo: '/homepage' // redirige vers site.com/homepage
   },

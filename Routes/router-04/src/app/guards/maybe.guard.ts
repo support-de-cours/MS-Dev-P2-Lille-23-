@@ -11,7 +11,7 @@ export class MaybeGuard implements CanActivate {
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
 
       let a = Math.random();
-      let result = (a < 0.4);
+      let result = (a < 0.5);
 
       console.log(a, result);
       
