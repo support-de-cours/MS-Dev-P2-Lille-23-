@@ -25,15 +25,16 @@ export class IndexComponent implements OnInit {
   ){}
 
   // Note: 32.c. Utilisation de la methode "ngOnInit" de la classe "OnInit"
-    ngOnInit(): void {
+  ngOnInit(): void {
+    
+    // Note: 34.a. Utilisation du service HttpClient pour contacter l'API
+    this.httpClient
+      // Note: 34.b. Préparation de l'appel de l'API
+      .get( url )
+      // Note: 34.c. Souscription a la réponse de l'API
+      .subscribe(response => {
+        this.albums = response
+      });
       
-      // Note: 34.a. Utilisation du service HttpClient pour contacter l'API
-      this.httpClient
-        // Note: 34.b. Préparation de l'appel de l'API
-        .get( url )
-        // Note: 34.c. Souscription a la réponse de l'API
-        .subscribe(data => {
-          this.albums = data
-        });
-    }
+  }
 }

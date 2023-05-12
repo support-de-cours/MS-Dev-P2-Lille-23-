@@ -1,4 +1,4 @@
-// Note: 2. Création du module "page" (shell: ng g m core)
+// Note: 2. Création du module "page" (shell: ng g m pages)
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 

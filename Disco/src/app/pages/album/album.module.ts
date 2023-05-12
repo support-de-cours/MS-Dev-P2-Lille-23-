@@ -10,6 +10,7 @@ import { CreateComponent } from './pages/create/create.component';
 import { ReadComponent } from './pages/read/read.component';
 import { UpdateComponent } from './pages/update/update.component';
 import { DeleteComponent } from './pages/delete/delete.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { DeleteComponent } from './pages/delete/delete.component';
   ],
   imports: [
     CommonModule,
+    RouterModule,
     HttpClientModule, // Note: 30.b. Injection du module "HttpClientModule" pour que le module Album puisse utiliser les services Http
     AlbumRoutingModule
   ]

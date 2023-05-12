@@ -12,11 +12,25 @@ import { ReadComponent } from './pages/read/read.component';
 import { UpdateComponent } from './pages/update/update.component';
 import { DeleteComponent } from './pages/delete/delete.component';
 
+
+// ==> site.com/albums
+// ==> site.com/album/create
+// ==> site.com/album/42
+// ==> site.com/album/42/edit
+// ==> site.com/album/42/delete
+
+// ==> site.com/x
+// ==> site.com/y
+// ==> site.com/y/i
+// ==> site.com/y/i/j
+// ==> site.com/y/i/j
+
+
 // Note: 18. Définition des routes du module "Album"
 const routes: Routes = [
   // Index (liste des albums)
   {
-    path: 'albums',                 // ==> site.com/albums
+    path: 'albums',                                                             // ==> site.com/albums
     component: IndexComponent
   },
 
