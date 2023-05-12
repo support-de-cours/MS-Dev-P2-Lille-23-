@@ -1,7 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+// Note: 14 Définition de la route "default"
+const routes: Routes = [
+  // Default Route
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: '/homepage'
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
