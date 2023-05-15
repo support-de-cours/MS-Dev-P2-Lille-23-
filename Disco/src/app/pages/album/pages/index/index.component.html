@@ -6,7 +6,7 @@
     <div *ngFor="let album of albums">
         
         <!-- Note: 29. affiche un album -->
-        <a routerLink="/homepage">{{ album.title }}</a>
+        <a [routerLink]="['/album', album.id]">{{ album.title }}</a>
 
     </div>
 
