@@ -1,8 +1,6 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-
-
+import { AlbumService } from '../../services/album.service';
 
 @Component({
   selector: 'app-read',
@@ -15,26 +13,17 @@ export class ReadComponent implements OnInit {
   public album: any;
 
   constructor(
-    private httpClient: HttpClient,
+    private albumService: AlbumService,
     private route: ActivatedRoute
   ){
-    // Recupération du parametre ID de l'url
-    // + Convertion de l'ID en type Number
     let id = Number(this.route.snapshot.paramMap.get('id'));
-
-    // Controle de la valeur de l'ID et affectation à la propriété ID
-    if (id && id > 0) this.id = id;
+    if (id && id > 0) {
+      this.id = id;
+      this.albumService.getAlbumById( id );
+    };
   }
   
   ngOnInit(): void {
-    const url = `http://localhost:3000/albums/${this.id}`;
-    
-    this.httpClient
-      .get( url )
-      .subscribe(response => {
-
-        this.album = response
-        
-      });
+    this.albumService.album.subscribe(data => this.album = data);
   }
 }

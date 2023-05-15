@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AlbumService } from './pages/album/services/album.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Disco';
+
+  constructor(
+    private albumService: AlbumService
+  ){
+    // this.albumService.getAlbumsFromApi()
+  }
 }
